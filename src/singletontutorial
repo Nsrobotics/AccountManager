@@ -1,0 +1,40 @@
+/* 
+how to create a singleton:
+
+in the class, create a new private static instance of the Object (same name as the class), but do not instantiate it. Then create a 
+constructor for the class, in which you will have a conditional. If there is no current instance of the Object, then instantiate the
+new instance. Finally, return the instance.
+
+Here's what that might look like:
+
+public class Singleton {
+
+	private static Singleton instance; (creates Singleton instance but does not give it a value)
+
+	public static Singleton {
+
+		if (instance == null) { (conditional. if there is no instance, then instantiate a new one.)
+			instance = new Singleton();
+		}
+
+	return instance; (return the instance :->)
+	}
+}
+
+public class AccountManager {
+
+	private static AccountManager instance; // (creates Singleton instance but does not give it a value)
+
+	public static AccountManager {
+
+		if (instance == null) { //(conditional. if there is no instance, then instantiate a new one.)
+			instance = new AccountManager();
+		}
+
+	    return AccountManager; //(return the instance :->)
+	}
+}
+
+
+
+*/
